@@ -18,4 +18,10 @@ router.get('/login', function(req, res, next) {
   });
 });
 
+router.get('/record', function(req, res, next) {
+  res.render('record', {
+    title: '考勤记录'
+  });
+});
+
 module.exports = router;
