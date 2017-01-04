@@ -8,13 +8,15 @@ router.get('/', function(req, res, next) {
 
 router.get('/signup', function(req, res, next) {
   res.render('signup', {
-    title: '注册'
+    title: '注册',
+    layout: 'nologin-layout'
   });
 });
 
 router.get('/login', function(req, res, next) {
   res.render('login', {
-    title: '登录'
+    title: '登录',
+    layout: 'nologin-layout'
   });
 });
 
